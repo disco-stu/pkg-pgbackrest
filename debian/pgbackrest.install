@@ -1,0 +1,3 @@
+lib/BackRest usr/share/perl5/
+bin/pg_backrest usr/bin/
+debian/pg_backrest.conf etc/

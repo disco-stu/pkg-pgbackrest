@@ -1,0 +1,16 @@
+Source: pgbackrest
+Section: database
+Priority: extra
+Maintainer: Adrian Vondendriesch <adrian.vondendriesch@credativ.de>
+Build-Depends: debhelper (>=9)
+Standards-Version: 3.9.7
+Homepage: https://github.com/pgmasters/backrest
+#Vcs-Git: git://anonscm.debian.org/collab-maint/backrest.git
+#Vcs-Browser: https://github.com/pgmasters/backrest
+
+Package: pgbackrest
+Architecture: any
+Depends: ${perl:Depends}, ${misc:Depends}
+Description: Reliable PostgreSQL Backup & Restore
+ pgBackRest aims to be a simple, reliable backup and restore system that can
+ seamlessly scale up to the largest databases and workloads.
