@@ -1,0 +1,15 @@
+#!/bin/sh
+
+#DEBHELPER#
+
+set -e
+
+USER="postgres"
+GROUP="postgres"
+
+DIRS="/var/log/pgbackrest/ /var/lib/pgbackrest/ /var/spool/pgbackrest"
+for dir in $DIRS; do
+    echo "Creating $dir"
+    mkdir -p $dir
+    chown ${USER}:${GROUP} $dir
+done
