@@ -1,4 +1,10 @@
-pgbackrest (1.00-1) UNRELEASED; urgency=medium
+pgbackrest (1.01-1) UNRELEASED; urgency=medium
+
+  * New upstream release.
+
+ -- Adrian Vondendriesch <adrian.vondendriesch@credativ.de>  Fri, 20 May 2016 20:49:43 +0200
+
+pgbackrest (1.00-1) unstable; urgency=medium
 
   * New upstream release.
   * Rename config file from pg_backrest.conf to pgbackrest.conf.
