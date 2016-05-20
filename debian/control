@@ -10,7 +10,7 @@ Homepage: http://www.pgbackrest.org/
 
 Package: pgbackrest
 Architecture: any
-Depends: ${perl:Depends}, ${misc:Depends}
+Depends: ${perl:Depends}, ${misc:Depends}, libdbd-pg-perl
 Description: Reliable PostgreSQL Backup & Restore
  pgBackRest aims to be a simple, reliable backup and restore system that can
  seamlessly scale up to the largest databases and workloads.

@@ -1,6 +1,7 @@
 pgbackrest (1.01-1) UNRELEASED; urgency=medium
 
   * New upstream release.
+  * Add libdbd-pg-perl to Depends.
 
  -- Adrian Vondendriesch <adrian.vondendriesch@credativ.de>  Fri, 20 May 2016 20:49:43 +0200
 
