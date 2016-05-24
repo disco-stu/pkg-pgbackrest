@@ -5,3 +5,5 @@
 %:
 	dh $@
 
+override_dh_auto_build:
+	perl $(CURDIR)/doc/doc.pl --no-exe --out=html

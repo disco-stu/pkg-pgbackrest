@@ -2,8 +2,10 @@ Source: pgbackrest
 Section: database
 Priority: extra
 Maintainer: Adrian Vondendriesch <adrian.vondendriesch@credativ.de>
-Build-Depends: debhelper (>=9)
+Build-Depends: debhelper (>=9),
+ libxml-checker-perl
 Standards-Version: 3.9.8
+Suggests: pgbackrest-doc
 Homepage: http://www.pgbackrest.org/
 #Vcs-Git: git://anonscm.debian.org/collab-maint/backrest.git
 #Vcs-Browser: https://github.com/pgbackrest/pgbackrest
@@ -14,3 +16,11 @@ Depends: ${perl:Depends}, ${misc:Depends}, libdbd-pg-perl, postgresql-common
 Description: Reliable PostgreSQL Backup & Restore
  pgBackRest aims to be a simple, reliable backup and restore system that can
  seamlessly scale up to the largest databases and workloads.
+
+Package: pgbackrest-doc
+Architecture: all
+Multi-Arch: foreign
+Section: doc
+Depends: ${misc:Depends}
+Description: Documentation package for pgbackrest
+ This pacckage contains detailed information about pgbackrest usage.

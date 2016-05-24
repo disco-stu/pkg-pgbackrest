@@ -1,0 +1,37 @@
+commit d2fe4287caf2fa1171d0946bd639c1b2c2c3fd4f
+Author: Adrian Vondendriesch <adrian.vondendriesch@credativ.de>
+Date:   Mon May 23 21:11:15 2016 +0200
+
+    Remove absolute path for logo.
+    
+    While building the documentation within the projects root directory the build
+    fails because of absolute file paths within DocLatex.pm and manifest.xml.
+    
+    Fix: Using relative paths.
+
+diff --git a/doc/lib/BackRestDoc/Latex/DocLatex.pm b/doc/lib/BackRestDoc/Latex/DocLatex.pm
+index 1d81288..1db4852 100644
+--- a/doc/lib/BackRestDoc/Latex/DocLatex.pm
++++ b/doc/lib/BackRestDoc/Latex/DocLatex.pm
+@@ -103,7 +103,7 @@ sub process
+     my $oRender = $self->{oManifest}->renderGet(RENDER_TYPE_PDF);
+ 
+     # Copy the logo
+-    copy('/backrest/doc/resource/latex/cds-logo.eps', "$self->{strLatexPath}/logo.eps")
++    copy('doc/resource/latex/cds-logo.eps', "$self->{strLatexPath}/logo.eps")
+         or confess &log(ERROR, "unable to copy logo");
+ 
+     my $strLatex = $self->{oManifest}->variableReplace(fileStringRead($self->{strPreambleFile}), 'latex') . "\n";
+diff --git a/doc/manifest.xml b/doc/manifest.xml
+index 5ec596a..6a871a8 100644
+--- a/doc/manifest.xml
++++ b/doc/manifest.xml
+@@ -13,7 +13,7 @@
+         <variable key="project-favicon">favicon.png</variable>
+ 
+         <!-- Logo locations -->
+-        <variable key="logo">/backrest/doc/output/latex/logo</variable>
++        <variable key="logo">doc/output/latex/logo</variable>
+ 
+         <!-- HTML variables  -->
+         <variable key="html-footer" eval='y'>

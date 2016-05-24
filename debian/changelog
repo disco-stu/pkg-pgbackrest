@@ -5,8 +5,10 @@ pgbackrest (1.01-1) UNRELEASED; urgency=medium
   * Add postgresql-common to Depends.
   * Change owner of pgbackrest directories to postgres in postinst.
   * Bump standards version.
+  * Create a pgbackrest-doc package which contains the html documentation.
   * patches:
     * add upstream sprintf patch
+    * add upstream documentation patches
 
  -- Adrian Vondendriesch <adrian.vondendriesch@credativ.de>  Fri, 20 May 2016 20:49:43 +0200
 

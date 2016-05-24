@@ -1,0 +1,10 @@
+Document: pgbackrest
+Title: pgBackRest Documentation
+Author: David Steele
+Abstract: The documentation of the pgBackRest backup utility contains
+ detailed information about usage and configuration of pgBackRest.
+Section: Data Management
+
+Format: HTML
+Index: /usr/share/doc/pgbackrest-doc/html/index.html
+Files: /usr/share/doc/pgbackrest-doc/html/*
