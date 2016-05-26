@@ -8,8 +8,8 @@ Build-Depends: debhelper (>=9),
 Standards-Version: 3.9.8
 Suggests: pgbackrest-doc
 Homepage: http://www.pgbackrest.org/
-#Vcs-Git: git://anonscm.debian.org/collab-maint/backrest.git
-#Vcs-Browser: https://github.com/pgbackrest/pgbackrest
+Vcs-Git: git@github.com:disco-stu/pkg-pgbackrest.git
+Vcs-Browser: https://github.com/disco-stu/pkg-pgbackrest.git
 
 Package: pgbackrest
 Architecture: any
