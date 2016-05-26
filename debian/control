@@ -3,7 +3,8 @@ Section: database
 Priority: extra
 Maintainer: Adrian Vondendriesch <adrian.vondendriesch@credativ.de>
 Build-Depends: debhelper (>=9),
- libxml-checker-perl
+ libxml-checker-perl,
+ txt2man
 Standards-Version: 3.9.8
 Suggests: pgbackrest-doc
 Homepage: http://www.pgbackrest.org/

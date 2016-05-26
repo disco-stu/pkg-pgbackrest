@@ -6,6 +6,7 @@ pgbackrest (1.01-1) UNRELEASED; urgency=medium
   * Change owner of pgbackrest directories to postgres in postinst.
   * Bump standards version.
   * Create a pgbackrest-doc package which contains the html documentation.
+  * Ship own manage.
   * patches:
     * add upstream sprintf patch
     * add upstream documentation patches

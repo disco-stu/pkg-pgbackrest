@@ -1,5 +1,7 @@
 #!/usr/bin/make -f
 
+MANTEMPLATE="${CURDIR}/debian/pgbackrest.1.txt"
+
 #export DH_VERBOSE = 1
 
 %:
@@ -7,3 +9,10 @@
 
 override_dh_auto_build:
 	perl $(CURDIR)/doc/doc.pl --no-exe --out=html
+	MANDATE=$(stat -c %y $MANTEMPLATE | cut -f1 -d " ")
+	txt2man \
+	  -v "pgBackRest command reference" \
+	  -d "2016-05-25" \
+	  -p pgbackrest \
+	  ${MANTEMPLATE} > ${CURDIR}/debian/pgbackrest.1
+	dh_auto_build
