@@ -1,4 +1,4 @@
-pgbackrest (1.02dev-1) UNRELEASED; urgency=medium
+pgbackrest (1.02-1) UNRELEASED; urgency=medium
 
   * New upstream release.
   * Drop patches included in upstream version.
