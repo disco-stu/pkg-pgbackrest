@@ -8,12 +8,11 @@ MANTEMPLATE="${CURDIR}/doc/output/man/pgbackrest.1.txt"
 	dh $@
 
 override_dh_auto_build:
-	perl $(CURDIR)/doc/doc.pl --out=man --out=html --cache-only --var=project-url-root=index.html --exclude=backlog
+	perl $(CURDIR)/doc/doc.pl --out=man --out=html --cache-only \
+	  --var=project-url-root=index.html --exclude=backlog
 	MANDATE=$(stat -c %y $MANTEMPLATE | cut -f1 -d " ")
 	txt2man \
-	  -v "pgBackRest command reference" \
-	  -d "2016-05-25" \
-	  -t pgbackrest \
-	  -s 1 \
+	  -v "pgBackRest Command Reference" \
+	  -p pgbackrest \
 	  ${MANTEMPLATE} > ${CURDIR}/doc/output/man/pgbackrest.1
 	dh_auto_build
