@@ -12,3 +12,5 @@ for dir in $DIRS; do
     mkdir -p $dir
     chown ${USER}:${GROUP} $dir
 done
+
+chown ${USER}:${GROUP} /etc/pgbackrest.conf

@@ -3,6 +3,7 @@ pgbackrest (1.02-1) UNRELEASED; urgency=medium
   * New upstream release.
   * Drop patches included in upstream version.
   * Ship manapage based on upstream template.
+  * Change owner of pgbackrest.conf to postgres.
 
  -- Adrian Vondendriesch <adrian.vondendriesch@credativ.de>  Wed, 01 Jun 2016 20:57:32 +0200
 
