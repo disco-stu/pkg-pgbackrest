@@ -12,7 +12,7 @@ Vcs-Git: https://github.com/disco-stu/pkg-pgbackrest.git
 Vcs-Browser: https://github.com/disco-stu/pkg-pgbackrest.git
 
 Package: pgbackrest
-Architecture: any
+Architecture: all
 Depends: ${perl:Depends}, ${misc:Depends}, libdbd-pg-perl, postgresql-common
 Description: Reliable PostgreSQL Backup & Restore
  pgBackRest aims to be a simple, reliable backup and restore system that can
