@@ -1,4 +1,12 @@
-pgbackrest (1.01-1) UNRELEASED; urgency=medium
+pgbackrest (1.02-1) UNRELEASED; urgency=medium
+
+  * New upstream release.
+  * Drop patches included in upstream version.
+  * Ship manapage based on upstream template.
+
+ -- Adrian Vondendriesch <adrian.vondendriesch@credativ.de>  Wed, 01 Jun 2016 20:57:32 +0200
+
+pgbackrest (1.01-1) unstable; urgency=medium
 
   * New upstream release.
   * Add libdbd-pg-perl to Depends.
@@ -11,7 +19,7 @@ pgbackrest (1.01-1) UNRELEASED; urgency=medium
     * add upstream sprintf patch
     * add upstream documentation patches
 
- -- Adrian Vondendriesch <adrian.vondendriesch@credativ.de>  Fri, 20 May 2016 20:49:43 +0200
+ -- Adrian Vondendriesch <adrian.vondendriesch@credativ.de>  Wed, 01 Jun 2016 20:57:29 +0200
 
 pgbackrest (1.00-1) unstable; urgency=medium
 
