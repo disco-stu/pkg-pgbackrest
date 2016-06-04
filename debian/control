@@ -15,7 +15,7 @@ Package: pgbackrest
 Architecture: all
 Depends: ${perl:Depends}, ${misc:Depends}, libdbd-pg-perl, postgresql-common
 Description: Reliable PostgreSQL Backup & Restore
- pgBackRest aims to be a simple, reliable backup and restore system that can
+ pgBackRest is a simple, reliable backup and restore system that can
  seamlessly scale up to the largest databases and workloads.
 
 Package: pgbackrest-doc
@@ -24,4 +24,5 @@ Multi-Arch: foreign
 Section: doc
 Depends: ${misc:Depends}
 Description: Documentation package for pgbackrest
- This pacckage contains detailed information about pgbackrest usage.
+ The pgBackRest documentation contains detailed information about the
+ configuration and usage of pgBackRest.
